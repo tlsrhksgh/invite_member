@@ -10,7 +10,7 @@ import java.util.Base64;
 public class Aes256Util {
     private static final String ALG = "AES/CBC/PKCS5Padding";
     private static final String KEY = "12345678901234567890123456789012";
-    private static final String KEY_256 = KEY.substring(0, 256 / 8);
+    private static final String KEY_256 = KEY.substring(0, 16);
 
     public static String encrypt(String text) {
         try {
