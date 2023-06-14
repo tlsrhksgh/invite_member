@@ -1,6 +1,6 @@
 package com.zero.userapi.domain;
 
-import com.zero.userapi.domain.member.RegisterForm;
+import com.zero.userapi.domain.member.SignUpForm;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,7 +26,7 @@ public class Member {
     private String phoneNumber;
     private String password;
 
-    public static Member from(RegisterForm form) {
+    public static Member from(SignUpForm form) {
         return Member.builder()
                 .email(form.getEmail())
                 .name(form.getName())
