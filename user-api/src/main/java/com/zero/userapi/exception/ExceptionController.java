@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class ExceptionController {
 
-    @ExceptionHandler(UserException.class)
-    public ResponseEntity<ExceptionForm> requestException(final UserException exception) {
+    @ExceptionHandler(MemberException.class)
+    public ResponseEntity<ExceptionForm> requestException(final MemberException exception) {
         log.warn("user api Exception: {}", exception.getErrorCode());
         return ResponseEntity.badRequest().body(
                 new ExceptionForm(exception.getMessage(), exception.getErrorCode().getHttpStatus().value())

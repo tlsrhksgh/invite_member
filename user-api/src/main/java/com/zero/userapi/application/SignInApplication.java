@@ -3,7 +3,7 @@ package com.zero.userapi.application;
 import com.zero.config.JwtAuthenticationProvider;
 import com.zero.userapi.domain.Member;
 import com.zero.userapi.domain.member.SignInForm;
-import com.zero.userapi.exception.UserException;
+import com.zero.userapi.exception.MemberException;
 import com.zero.userapi.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ public class SignInApplication {
         Member member = memberService.findValidMember(form);
 
         if(member == null) {
-            throw new UserException(MEMBER_NOT_FOUND);
+            throw new MemberException(MEMBER_NOT_FOUND);
         }
 
         return jwtProvider.createToken(form.getEmail());
