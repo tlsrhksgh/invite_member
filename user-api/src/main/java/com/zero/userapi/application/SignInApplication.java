@@ -1,14 +1,14 @@
 package com.zero.userapi.application;
 
 import com.zero.config.JwtAuthenticationProvider;
-import com.zero.userapi.domain.Member;
+import com.zero.exception.MemberException;
+import com.zero.model.Member;
 import com.zero.userapi.domain.member.SignInForm;
-import com.zero.userapi.exception.MemberException;
 import com.zero.userapi.service.MemberService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import static com.zero.userapi.exception.ErrorCode.MEMBER_NOT_FOUND;
+import static com.zero.exception.ErrorCode.MEMBER_NOT_FOUND;
 
 @RequiredArgsConstructor
 @Service

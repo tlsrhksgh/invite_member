@@ -1,4 +1,4 @@
-package com.zero.userapi.exception;
+package com.zero.exception;
 
 import lombok.Getter;
 

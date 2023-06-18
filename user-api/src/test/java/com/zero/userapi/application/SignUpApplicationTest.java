@@ -1,7 +1,7 @@
 package com.zero.userapi.application;
 
-import com.zero.userapi.domain.member.SignUpForm;
-import com.zero.userapi.exception.MemberException;
+import com.zero.exception.MemberException;
+import com.zero.model.dto.SignUpForm;
 import com.zero.userapi.service.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

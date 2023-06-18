@@ -1,4 +1,4 @@
-package com.zero.userapi.config;
+package com.zero.groupapi.config;
 
 import com.zero.config.JwtAuthenticationProvider;
 import org.springframework.context.annotation.Bean;

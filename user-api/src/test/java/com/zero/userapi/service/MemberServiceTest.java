@@ -1,10 +1,10 @@
 package com.zero.userapi.service;
 
-import com.zero.userapi.domain.Member;
+import com.zero.exception.MemberException;
+import com.zero.model.Member;
+import com.zero.model.dto.SignUpForm;
 import com.zero.userapi.domain.member.SignInForm;
-import com.zero.userapi.domain.member.SignUpForm;
 import com.zero.userapi.domain.repository.MemberRepository;
-import com.zero.userapi.exception.MemberException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -14,7 +14,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Optional;
 
-import static com.zero.userapi.exception.ErrorCode.*;
+import static com.zero.exception.ErrorCode.INVALID_PASSWORD;
+import static com.zero.exception.ErrorCode.MEMBER_NOT_FOUND;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.times;

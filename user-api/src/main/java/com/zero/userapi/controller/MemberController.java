@@ -1,9 +1,9 @@
 package com.zero.userapi.controller;
 
+import com.zero.model.dto.SignUpForm;
 import com.zero.userapi.application.SignInApplication;
 import com.zero.userapi.application.SignUpApplication;
 import com.zero.userapi.domain.member.SignInForm;
-import com.zero.userapi.domain.member.SignUpForm;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

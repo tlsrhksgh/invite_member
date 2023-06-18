@@ -1,9 +1,9 @@
 package com.zero.userapi.application;
 
 import com.zero.config.JwtAuthenticationProvider;
-import com.zero.userapi.domain.Member;
+import com.zero.exception.MemberException;
+import com.zero.model.Member;
 import com.zero.userapi.domain.member.SignInForm;
-import com.zero.userapi.exception.MemberException;
 import com.zero.userapi.service.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
