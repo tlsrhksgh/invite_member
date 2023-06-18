@@ -1,15 +1,15 @@
 package com.zero.userapi.service;
 
-import com.zero.userapi.domain.Member;
+import com.zero.exception.MemberException;
+import com.zero.model.Member;
+import com.zero.model.dto.SignUpForm;
 import com.zero.userapi.domain.member.SignInForm;
-import com.zero.userapi.domain.member.SignUpForm;
 import com.zero.userapi.domain.repository.MemberRepository;
-import com.zero.userapi.exception.MemberException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import static com.zero.userapi.exception.ErrorCode.MEMBER_NOT_FOUND;
-import static com.zero.userapi.exception.ErrorCode.INVALID_PASSWORD;
+import static com.zero.exception.ErrorCode.INVALID_PASSWORD;
+import static com.zero.exception.ErrorCode.MEMBER_NOT_FOUND;
 
 @RequiredArgsConstructor
 @Service

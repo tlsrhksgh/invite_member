@@ -1,9 +1,9 @@
 package com.zero.userapi.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.zero.model.dto.SignUpForm;
 import com.zero.userapi.application.SignInApplication;
 import com.zero.userapi.application.SignUpApplication;
-import com.zero.userapi.domain.member.SignUpForm;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

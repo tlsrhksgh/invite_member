@@ -1,10 +1,7 @@
-package com.zero.userapi.domain;
+package com.zero.model;
 
-import com.zero.userapi.domain.member.SignUpForm;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.zero.model.dto.SignUpForm;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -25,6 +22,10 @@ public class Member {
     private String email;
     private String phoneNumber;
     private String password;
+
+    @ManyToOne
+    @JoinColumn(name="group_id")
+    private Group group;
 
     public static Member from(SignUpForm form) {
         return Member.builder()

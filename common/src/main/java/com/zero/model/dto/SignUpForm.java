@@ -1,4 +1,4 @@
-package com.zero.userapi.domain.member;
+package com.zero.model.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;

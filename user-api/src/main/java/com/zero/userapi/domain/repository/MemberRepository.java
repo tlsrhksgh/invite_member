@@ -1,6 +1,6 @@
 package com.zero.userapi.domain.repository;
 
-import com.zero.userapi.domain.Member;
+import com.zero.model.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
